@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F44336"
+    android:fitsSystemWindows="true"
+    android:minHeight="?attr/actionBarSize">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:background="#14FFFFFF"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_local_music"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="本地音乐"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:onClick="onClick"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/tv_online_music"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="在线音乐"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#14FFFFFF"
+        android:contentDescription="@null"
+        android:layout_gravity="end"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_menu"
+        android:onClick="onClick"
+        android:clickable="true"/>
+</FrameLayout>

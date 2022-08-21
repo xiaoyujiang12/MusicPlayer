@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+    <string name="setting_key_mobile_network_play" />
+    <string name="setting_key_mobile_network_download" />
+    <string name="setting_key_filter_size" />
+    <string name="setting_key_filter_time" />
+</resources>
